@@ -8,7 +8,7 @@ function findAdjacent(stationName, vertices, edges) {
     if(edges[i][0] == stationName) {
       // find object in vertices array
       for (let j = 0; j < vertices.length; j++) {
-        if (vertices[j].name == edges[i][1]) {
+        if (vertices[j].name == edges[i][1] && vertices[j].distance) {
           results.push(vertices[j]);
           edges.splice(i,1);
           i--;
@@ -18,7 +18,7 @@ function findAdjacent(stationName, vertices, edges) {
     } else if (edges[i][1] == stationName) {
       // find object in vertices array
       for (let j = 0; j < vertices.length; j++) {
-        if (vertices[j].name == edges[i][0]) {
+        if (vertices[j].name == edges[i][0] && vertices[j].distance) {
           results.push(vertices[j]);
           edges.splice(i,1);
           i--;
@@ -43,7 +43,7 @@ function findAdjacent(stationName, vertices, edges) {
 //   {name: '34th&6th', distance: null, predecessor: null},
 //   {name: '23rd&6th', distance: null, predecessor: null},
 //   {name: '28th&Bwy', distance: null, predecessor: null},
-// 
+//
 //   {name: '14th&6th', distance: null, predecessor: null},
 //   {name: '23rd&Bwy', distance: null, predecessor: null},
 //   {name: '14th&Lex', distance: null, predecessor: null},
