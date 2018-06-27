@@ -18,10 +18,11 @@ function findAdjacent(stationName, vertices, edges) {
       for (let j = 0; j < vertices.length; j++) {
         if (vertices[j].name == edges[i][0]) {
           results.push(vertices[j]);
-          edges.splice(i,1);
         }
       }
     }
+    edges.splice(i,1);
+    i--;
   }
   return results;
 }
