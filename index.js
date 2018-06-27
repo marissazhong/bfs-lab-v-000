@@ -22,7 +22,6 @@ function findAdjacent(stationName, vertices, edges) {
         }
       }
     }
-    console.log(edges);
   }
   return results;
 }
@@ -47,7 +46,8 @@ vertices = [
   {name: '23rd&Lex', distance: null, predecessor: null}
 ]
 
-//console.log(findAdjacent('34th&6th',vertices,edges));
+console.log(findAdjacent('34th&6th',vertices,edges));
+console.log(findAdjacent('28th&Bwy',vertices,edges));
 
 function markDistanceAndPredecessor() {
 
