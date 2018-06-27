@@ -3,7 +3,7 @@ function bfs(rootNode, vertices, edges){
   addToQueue(rootNode,queue);
   while(queue.length != 0) {
     let firstNode = queue.shift();
-    adjacentVertices = findAdjacent(firstNode.name,vertices,edges);
+    let adjacentVertices = findAdjacent(firstNode.name,vertices,edges);
     for (let i = 0; i < adjacentVertices.length; i++) {
       markDistanceAndPredecessor(firstNode,adjacentVertices[i]);
       addToQueue(adjacentVertices[i],queue);
