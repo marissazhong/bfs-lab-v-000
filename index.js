@@ -15,7 +15,7 @@ function findAdjacent(stationName, vertices, edges) {
     } else if (edges[i][1] == stationName) {
       // find object in vertices array
       for (let j = 0; j < vertices.length; j++) {
-        if (vertices[j][name] == edges[i][0]) {
+        if (vertices[j][:name] == edges[i][0]) {
           results.push(vertices[j][edges[i][0]]);
         }
       }
