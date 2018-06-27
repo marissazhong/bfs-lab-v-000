@@ -10,6 +10,8 @@ function findAdjacent(stationName, vertices, edges) {
       for (let j = 0; j < vertices.length; j++) {
         if (vertices[j].name == edges[i][1]) {
           results.push(vertices[j]);
+          edges.splice(i,1);
+          i--;
         }
       }
     } else if (edges[i][1] == stationName) {
@@ -17,11 +19,12 @@ function findAdjacent(stationName, vertices, edges) {
       for (let j = 0; j < vertices.length; j++) {
         if (vertices[j].name == edges[i][0]) {
           results.push(vertices[j]);
+          edges.splice(i,1);
+          i--;
         }
       }
     }
-    edges.splice(i,1);
-    i--;
+
   }
   console.log(edges);
   return results;
