@@ -76,6 +76,6 @@ function markDistanceAndPredecessor(node, adjacentNodes) {
   return adjacentNodes;
 }
 
-function addToQueue(node) {
+function addToQueue(node,queue) {
   return queue.push(node);
 }
