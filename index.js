@@ -6,7 +6,7 @@ function bfs(rootNode, vertices, edges){
     adjacentVertices = findAdjacent(firstNode);
     for (let i = 0; i < adjacentVertices.length; i++) {
       markDistanceAndPredecessor(adjacentVertices[i]);
-      addToQueue(adjacentVertices[i]);
+      addToQueue(adjacentVertices[i],queue);
     }
   }
 }
