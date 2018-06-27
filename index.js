@@ -44,7 +44,7 @@ vertices = [
   {name: '23rd&Lex', distance: null, predecessor: null}
 ]
 
-console.log(findAdjacent('34th&6th',vertices,edges));
+//console.log(findAdjacent('34th&6th',vertices,edges));
 
 function markDistanceAndPredecessor() {
 
