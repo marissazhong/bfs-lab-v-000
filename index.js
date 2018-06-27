@@ -12,6 +12,7 @@ function findAdjacent(stationName, vertices, edges) {
           results.push(vertices[j]);
           edges.splice(i,1);
           i--;
+          break;
         }
       }
     } else if (edges[i][1] == stationName) {
@@ -21,6 +22,7 @@ function findAdjacent(stationName, vertices, edges) {
           results.push(vertices[j]);
           edges.splice(i,1);
           i--;
+          break;
         }
       }
     }
