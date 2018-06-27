@@ -60,10 +60,10 @@ function findAdjacent(stationName, vertices, edges) {
 // console.log(findAdjacent('28th&Bwy',vertices,edges));
 
 function markDistanceAndPredecessor(node, adjacentNodes) {
-  console.log(adjacentNodes);
   for (let i = 0; i < adjacentNodes.length; i++) {
     adjacentNodes[i].distance = node.distance + 1;
     adjacentNodes[i].predecessor = node.name;
+    console.log(adjacentNodes);
   }
   return adjacentNodes;
 }
