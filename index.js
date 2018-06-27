@@ -5,6 +5,7 @@ function bfs(rootNode, vertices, edges){
 function findAdjacent(stationName, vertices, edges) {
   var results = [];
   for (let i = 0; i < edges.length; i++) {
+    console.log(results);
     if(edges[i][0] == stationName) {
       // find object in vertices array
       for (let j = 0; j < vertices.length; j++) {
