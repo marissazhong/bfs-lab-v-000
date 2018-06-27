@@ -1,5 +1,6 @@
 function bfs(rootNode, vertices, edges){
   let queue = [];
+  addVertexToQueue(rootNode);
   
 }
 
