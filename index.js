@@ -1,5 +1,6 @@
 function bfs(rootNode, vertices, edges){
-
+  let queue = [];
+  
 }
 
 function findAdjacent(stationName, vertices, edges) {
@@ -58,7 +59,7 @@ function findAdjacent(stationName, vertices, edges) {
 // console.log(findAdjacent('28th&Bwy',vertices,edges));
 
 function markDistanceAndPredecessor() {
-  
+
 }
 
 function addToQueue() {
