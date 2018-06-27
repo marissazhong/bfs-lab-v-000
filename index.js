@@ -1,7 +1,7 @@
 function bfs(rootNode, vertices, edges){
   let queue = [];
   addVertexToQueue(rootNode);
-  
+
 }
 
 function findAdjacent(stationName, vertices, edges) {
@@ -64,5 +64,5 @@ function markDistanceAndPredecessor() {
 }
 
 function addToQueue(node) {
-  queue.push(node);
+  return queue.push(node);
 }
