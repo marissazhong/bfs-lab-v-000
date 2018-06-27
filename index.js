@@ -27,7 +27,7 @@ function findAdjacent(stationName, vertices, edges) {
       }
     }
   }
-  console.log(edges);
+  //console.log(edges);
   return results;
 }
 
