@@ -23,6 +23,7 @@ function findAdjacent(stationName, vertices, edges) {
     edges.splice(i,1);
     i--;
   }
+  console.log(edges);
   return results;
 }
 
