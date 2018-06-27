@@ -1,6 +1,6 @@
 function bfs(rootNode, vertices, edges){
   let queue = [];
-  addVertexToQueue(rootNode);
+  addToQueue(rootNode);
   while(queue.length != 0) {
     let firstNode = queue.shift();
     adjacentVertices = findAdjacent(firstNode);
