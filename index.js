@@ -1,7 +1,7 @@
 function bfs(rootNode, vertices, edges){
   let queue = [];
   addVertexToQueue(rootNode);
-  while()
+  //while()
 }
 
 function findAdjacent(stationName, vertices, edges) {
