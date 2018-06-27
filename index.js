@@ -50,8 +50,12 @@ vertices = [
   {name: '23rd&Lex', distance: null, predecessor: null}
 ]
 
-//console.log(findAdjacent('34th&6th',vertices,edges));
-//console.log(findAdjacent('28th&Bwy',vertices,edges));
+
+findAdjacent('34th&6th',vertices,edges);
+let thirtyFourthAndSixth = vertices[0]
+thirtyFourthAndSixth.distance = 0
+
+console.log(findAdjacent('28th&Bwy',vertices,edges));
 
 function markDistanceAndPredecessor() {
 
