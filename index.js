@@ -65,7 +65,7 @@ function markDistanceAndPredecessor(node, adjacentNodes) {
     adjacentNodes[i].predecessor = node.name;
     console.log(adjacentNodes);
   }
-  return adjacentNodes;
+  return node;
 }
 
 function addToQueue(node) {
