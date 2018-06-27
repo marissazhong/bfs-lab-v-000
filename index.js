@@ -1,5 +1,6 @@
 function bfs(rootNode, vertices, edges){
   let queue = [];
+  let results = [];
   addToQueue(rootNode,queue);
   while(queue.length != 0) {
     let firstNode = queue.shift();
@@ -8,11 +9,13 @@ function bfs(rootNode, vertices, edges){
       markDistanceAndPredecessor(firstNode,adjacentVertices[i]);
       addToQueue(adjacentVertices[i],queue);
     }
-    console.log("Current Node:");
-    console.log(firstNode);
-    console.log("Adjacent Nodes:");
-    console.log(adjacentVertices);
+    //console.log("Current Node:");
+    //console.log(firstNode);
+    //console.log("Adjacent Nodes:");
+    //console.log(adjacentVertices);
+    results.push(firstNode);
   }
+  return results;
 }
 
 function findAdjacent(stationName, vertices, edges) {
