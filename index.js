@@ -64,7 +64,7 @@ function markDistanceAndPredecessor(node, adjacentNodes) {
     adjacentNodes[i].distance = node.distance + 1;
     adjacentNodes[i].predecessor = node.name;
     console.log(adjacentNodes);
-    console.log(node)
+    console.log(node);
   }
   return adjacentNodes;
 }
